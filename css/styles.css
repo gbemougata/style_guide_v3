@@ -1,18 +1,11 @@
 /*
-Error: File to import not found or unreadable: normalise.
-        on line 2 of scss/base/_index.scss
-        from line 3 of scss/styles.scss
-
-1: /* import all subfolders files into styles.scss*\/
-2: @import "utilities/index";
-3: @import "base/index";
-4: @import "components/index"
+Errno::EISDIR: Is a directory - scss/base/_normalize.scss
 
 Backtrace:
-scss/base/_index.scss:2
-scss/styles.scss:3
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/importers/filesystem.rb:215:in `read'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/importers/filesystem.rb:215:in `_find'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/importers/filesystem.rb:22:in `find_relative'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:48:in `import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
@@ -70,4 +63,4 @@ scss/styles.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: normalise.\A         on line 2 of scss/base/_index.scss\A         from line 3 of scss/styles.scss\A \A 1: /* import all subfolders files into styles.scss*/\A 2: @import \"utilities/index\";\A 3: @import \"base/index\";\A 4: @import \"components/index\""; }
+  content: "Errno::EISDIR: Is a directory - scss/base/_normalize.scss"; }
