@@ -1,0 +1,114 @@
+//variables to be used
+//fonts
+$font-url--google       :     "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,800";
+$font-family--primary   :     'Lato', sans-serif,Slabo 23px, Arial;
+
+$sont-family--secondary :      'Serif',Slabo 27px, Arial;
+
+//font-weight
+
+$font-weight--thin        :       100;
+$fon-weight--light        :       250;
+$fon-weight--medium       :       400;
+$fon-weight--bold         :       700;
+$fon-weight--ultra-bold   :       800;
+
+//text text-decoration
+
+$letter-spacing          :        1em;
+$base-line               :        24px;
+$font-size               :        15px;
+
+//base-colors
+$white                   :        rgba(255,255,255,0.3);
+$black                   :        rgba(0,0,0,0.5);
+ $blue                   :        rgba(0,0,255,0.3);
+
+
+$AliceBlue               :         #f0f8ff;
+$aquamarine4             :         #458b74;
+$chartreuse4             :         #458b00;
+$coral                   :         #ff7f50;
+$cornflowerBlue          :         #6495ed;
+$DarkOliveGreen          :         #5562bf;
+$DarkOrange              :         #ff8c00;
+$firebrick               :         #b22222;
+$turquoise-blue          :         #61d7ed;
+$apricot                 :         #ed9361;
+$Maroon                  :         #800000;
+$Indianred               :         #cd5c5c;
+$cichild              :            #003eff;
+$salmon                  :         #fa8072;
+$snow4                   :         #8b8989;
+$rosybrown4              :         #8b6969;
+$dumpster                :         #004F00;
+$pinegreen               :         #003300;
+//color usages
+$color-primary           :         $firebrick;
+$color-secondary         :         $coral;
+
+//color palette
+
+$color-palettes           :         (
+cornfloweBlue             :         (
+light                     :          lighten($cornflowerBlue, 20%),
+x-light                   :          lighten($cornflowerBlue, 50%),
+base                      :          $cornflowerBlue,
+dark                      :          darken($cornflowerBlue, 5%),
+x-dark                    :          darken($cornflowerBlue, 25%),
+),
+coral                     :          (
+dark                      :          darken($coral, 30%),
+base                      :          $coral,
+light                     :          lighten($coral,20%),
+),
+);
+
+//buttons $color
+$btn-colors               :          (
+'default'                 :          $AliceBlue,
+'success'                 :          $chartreuse4,
+'error'                   :          $DarkOrange,
+'warning'                 :          $DarkOliveGreen,
+'info'                    :          $black,
+
+                                     );
+//ui $color
+$ui-colors                :          (
+$apricot,
+$cornflowerBlue,
+$DarkOrange,
+$firebrick,
+$DarkOliveGreen,
+$coral,
+$turquoise-blue
+                                     );
+
+
+
+//border radius
+$brd-radius               :          10px;
+$br-round                 :          50%;
+
+//Breakpoint
+$breakpoint-sm            :          480px;
+$breakpoint-md            :          768px;
+$breakpoint-lg            :          1040px;
+//grid
+$grid-theme-colors        :          (
+6                         :           $snow4,
+7                         :           $salmon,
+8                         :           $cichild,
+4                         :           $rosybrown4,
+3                         :           $dumpster,
+5                         :           $Maroon,
+12                        :           $pinegreen,
+                                      );
+//$grid-theme-colors
+$g-col-width              :           65px;
+$g-gutter-width           :           20px;
+$g-col-count              :           12;
+$g-count-max-w            :           1050px;
+//max-width
+$max-width                :           100%;
+$width                    :           80%;

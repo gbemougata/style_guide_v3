@@ -1,0 +1,26 @@
+//center text
+%center{
+  text-align:center;
+}
+
+//styling link
+
+%link {
+  @extend %center;
+  text-decoration: none;
+}
+
+%nav-items {
+  @extend %brd-radius;
+  width:80%;
+  height:em(50px);
+  align-self:center;
+}
+
+//images
+
+%img {
+    @extend %brd-radius;
+  display:block;
+
+}
