@@ -1,26 +1,80 @@
 //center text
-%center{
-  text-align:center;
+%center               {
+  text-align          :center;
 }
 
 //styling link
 
-%link {
-  @extend %center;
-  text-decoration: none;
-}
+%link                 {
+                       @extend %center;
+  text-decoration      : none;
+                       }
 
-%nav-items {
-  @extend %brd-radius;
-  width:80%;
-  height:em(50px);
-  align-self:center;
-}
+%nav_items             {
+
+  width                :100%;
+  height               :em(50px);
+  align-self           :center;
+                       }
 
 //images
 
-%img {
-    @extend %brd-radius;
-  display:block;
+%img                   {
+    border-radius      :$brd-radius;
+  display              :block;
+
+                       }
+
+//headline
+%headline--primary     {
+  color                :$color-secondary;
+  margin               :em(30px) 0 em(30px) em(24px);
+  font-family          :$font-family--primary;
+}
+%headline-secondary {
+  font-weight       :100;
+  color             :lighten($coral, 20%);
+  margin-top        :em(15px);
 
 }
+
+//input Elements
+%input{
+  display         :block;
+  width           :85%;
+  height          :45px;
+  border          :$brd-radius;
+  top-border      :10px solid $color-secondary;
+}
+%brd-radius       {
+  border-radius   :em(15px);
+}
+
+//button styles
+%btn               {
+  border           : 2px solid $blue;
+  width            :$width;
+  height           :em(40px);
+  color            :$cornflowerBlue;
+  text-shadow      : 2px 3px $AliceBlue;
+  font-size        :$font-size;
+}
+
+//Grid styling
+
+%grid             {
+  width           :$width;
+  border          :none;
+  font-weight     :$font-weight--bold;
+  color           :$DarkOrange;
+                   }
+//blockquote styling
+
+%blockquote        {
+  font-size        :$font-size;
+  font-display     : fallback;
+  line-height      :25px;
+  font-weight      :$font-weight--thin;
+  margin           :$max-width;
+
+                   }

@@ -8,10 +8,10 @@ $sont-family--secondary :      'Serif',Slabo 27px, Arial;
 //font-weight
 
 $font-weight--thin        :       100;
-$fon-weight--light        :       250;
-$fon-weight--medium       :       400;
-$fon-weight--bold         :       700;
-$fon-weight--ultra-bold   :       800;
+$font-weight--light        :       250;
+$font-weight--medium       :       400;
+$font-weight--bold         :       700;
+$font-weight--ultra-bold   :       800;
 
 //text text-decoration
 
@@ -75,13 +75,13 @@ $btn-colors               :          (
                                      );
 //ui $color
 $ui-colors                :          (
-$apricot,
-$cornflowerBlue,
-$DarkOrange,
-$firebrick,
-$DarkOliveGreen,
-$coral,
-$turquoise-blue
+default                   :        $apricot,
+success                   :        $cornflowerBlue,
+succees                   :        $DarkOrange,
+error                     :        $firebrick,
+warning                   :        $DarkOliveGreen,
+info                      :         $coral,
+
                                      );
 
 

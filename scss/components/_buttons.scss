@@ -1,0 +1,5 @@
+//Buttons
+[class^="btn--"] {
+  @extend %center;
+  @extend %btn;
+}
