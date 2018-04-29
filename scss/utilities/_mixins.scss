@@ -1,0 +1,11 @@
+//color modifiers
+@mixin bg-colors($ui-colors) {
+  @each $theme, $color in $ui-colors{
+    &--#{$theme}{
+      background-color:$color;
+      &:active {
+        background-color: lighten($color,30%);
+      }
+    }
+  }
+}

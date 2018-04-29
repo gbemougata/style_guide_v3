@@ -1,0 +1,15 @@
+//import google @font-face {
+@if variable-exists (font-url--google){
+  @import url($font-url--google);
+}
+
+//px to em functions
+@function em($target, $context:$base__font-size){
+  @return ($target/$context)*1em;
+}
+
+//palette call
+
+@function palette($color-palette, $shade:"base"){
+  @return map-get(map-get($color-palettes, $color-palette), $shade)
+}

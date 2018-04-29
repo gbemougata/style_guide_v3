@@ -10,10 +10,10 @@
   text-decoration      : none;
                        }
 
-%nav_items             {
+%nav-items             {
 
   width                :100%;
-  height               :em(50px);
+  height               :50px;
   align-self           :center;
                        }
 
@@ -44,7 +44,7 @@
   width           :85%;
   height          :45px;
   border          :$brd-radius;
-  top-border      :10px solid $color-secondary;
+  top-border      :em(10px) solid $color-secondary;
 }
 %brd-radius       {
   border-radius   :em(15px);
@@ -54,7 +54,7 @@
 %btn               {
   border           : 2px solid $blue;
   width            :$width;
-  height           :em(40px);
+  height           :40px;
   color            :$cornflowerBlue;
   text-shadow      : 2px 3px $AliceBlue;
   font-size        :$font-size;
@@ -73,8 +73,13 @@
 %blockquote        {
   font-size        :$font-size;
   font-display     : fallback;
-  line-height      :25px;
+  line-height      :(40px/30px);
   font-weight      :$font-weight--thin;
   margin           :$max-width;
 
                    }
+%container         {
+  max-width:$max-width;
+  border:em(25px) solid $color-primary;
+  background-color:$Maroon;
+                     }

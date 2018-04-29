@@ -2,4 +2,18 @@
 [class^="btn--"] {
   @extend %center;
   @extend %btn;
+  transition: all 0.5s;
+  padding:20px;
+  cursor:crosshair;
+  margin:10px;
+  animation: rotating 3s 0.3s linear infinite;
+  &:hover {
+    background-color:$turquoise-blue;
+    color:palette(coral, dark);
+
+  }
+}
+//background-color
+.btn{
+  @include bg-colors($ui-colors);
 }

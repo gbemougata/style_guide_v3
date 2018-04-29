@@ -1,12 +1,13 @@
 /* import all subfolders files into styles.scss*/
 /*import all utilities  partials into index.scss */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,800");
 [class^="btn--"] {
   text-align: center; }
 
 [class^="btn--"] {
   border: 2px solid rgba(0, 0, 255, 0.3);
   width: 80%;
-  height: em(40px);
+  height: 40px;
   color: #6495ed;
   text-shadow: 2px 3px #f0f8ff;
   font-size: 15px; }
@@ -25,5 +26,35 @@ li, ul {
   list-style: none; }
 
 /*import all partials in components into index.scss in order*/
+[class^="btn--"] {
+  transition: all 0.5s;
+  padding: 20px;
+  cursor: crosshair;
+  margin: 10px;
+  animation: rotating 3s 0.3s linear infinite; }
+  [class^="btn--"]:hover {
+    background-color: #61d7ed;
+    color: #b63100; }
+
+.btn--default {
+  background-color: #ed9361; }
+  .btn--default:active {
+    background-color: #fdf1ea; }
+.btn--success {
+  background-color: #6495ed; }
+  .btn--success:active {
+    background-color: #edf3fd; }
+.btn--error {
+  background-color: #b22222; }
+  .btn--error:active {
+    background-color: #e88585; }
+.btn--warning {
+  background-color: #5562bf; }
+  .btn--warning:active {
+    background-color: #c4c9e9; }
+.btn--info {
+  background-color: #ff7f50; }
+  .btn--info:active {
+    background-color: #ffefe9; }
 
 /*# sourceMappingURL=styles.css.map */
